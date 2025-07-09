@@ -1,5 +1,5 @@
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -9,3 +9,5 @@ DB_CONFIG = {
     "PASSWORD": os.getenv("DB_PASSWORD"),
     "DATABASE": os.getenv("DB_NAME")
 }
+
+SECRET_KEY = os.getenv("SECRET_KEY")
